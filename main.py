@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def dataLoad(filename: str) -> np.ndarray():
+def dataLoad(filename: str) -> np.ndarray:
     """Loads and filters data from a text file.
     The function will print the categories & indexes where errors where found.
     Input: string of text file name
@@ -93,6 +93,11 @@ def dataPlot(data: np.ndarray):
 
 
 def dataFilter(data):
+    """ Filters the data on user input.
+        User have to choose which variable to filter.
+        The prompts will guide the user
+        Input: Data
+    """
     done = False
     isValidTempLim = False
     isValidGrowthLim = False
